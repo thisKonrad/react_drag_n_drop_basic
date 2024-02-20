@@ -1,10 +1,12 @@
 /* :::: Ingredients :::: */
+import { useState } from 'react';
 import styles from './style.module.css';
 
 export default function Notes() {
+  const [note, setNote] = useState('');
   function inputValue(event) {
     const text = event.target.value;
-    console.log(text);
+    setNote(text);
   }
   function addItem(event) {
     event.preventDefault();
