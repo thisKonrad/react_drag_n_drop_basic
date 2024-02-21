@@ -1,7 +1,6 @@
 /* :::: APP :::: */
 import { useState } from 'react';
-import { DndContext, closestCorners } from '@dnd-kit/core';
-import DropZone from '../components/Notes/index.jsx';
+import DropZone from '../components/DropZone/index.jsx';
 import './App.css';
 
 function App() {
@@ -16,9 +15,7 @@ function App() {
 
   return (
     <div>
-      <DndContext>
-        <DropZone player={player} />
-      </DndContext>
+      <DropZone player={player} id={player.id} />
     </div>
   );
 }

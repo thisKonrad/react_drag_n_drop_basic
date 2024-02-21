@@ -5,8 +5,8 @@
   gap: 1rem;
   margin: 2rem;
   padding: 2rem;
-  min-width: 10vw;
-  min-height: 40vh;
+  min-width: 120%;
+  min-height: 60vh;
   background-color: rgba(245, 245, 245, 0.2);
 }
 
@@ -14,4 +14,12 @@
   font-size: 1.4rem;
   color: white;
   font-weight: lighter;
+}
+
+.player {
+  cursor: move;
+  font-size: 1.4rem;
+  color: white;
+  padding: 4px;
+  background-color: rgba(25, 25, 25, 0.3);
 }
