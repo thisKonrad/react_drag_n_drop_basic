@@ -1,8 +1,17 @@
-# React + Vite
+# React drag n drop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+drag n drop without libary.
 
-Currently, two official plugins are available:
+main function:
+retrieve the actual player card that is being dragged using the dragPlayer.current index.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+swaps the positions of the dragged player and the player that the dragged player is currently over.
+this is done by assigning the value at the dragOverPlayer.current index to the dragPlayer.current index,
+and vice versa.
+
+update the state of the player cards using the setPlayer state.
+
+using this function, you can easily implement drag-and-drop sorting for a list.
+
+the useRef is used to keep track of the indices of the dragged player card
+and the player that the dragged player is currently over.
